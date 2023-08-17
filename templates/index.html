@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heart Disease Prediction</title>
+</head>
+<body>
+  <h1>Heart Disease Prediction Using Machine Learning</h1>
+
+  <h2>Introduction:</h2>
+  <p>
+    Heart disease is a leading cause of mortality worldwide. Early prediction of heart disease can aid in timely intervention and better patient outcomes. This project aims to develop a predictive model for heart disease using various clinical and demographic features.
+  </p>
+
+  <h2>Dataset Description:</h2>
+  <p>
+    The dataset utilized for this study comprises anonymized patient data collected from Kaggle. It includes features such as age, sex, chest pain type (cp), resting blood pressure (trestbps), serum cholesterol levels (chol), fasting blood sugar (fbs), resting electrocardiographic results (restecg), maximum heart rate achieved (thalach), exercise-induced angina (exang), ST depression induced by exercise relative to rest (oldpeak), slope of the peak exercise ST segment (slope), number of major vessels colored by fluoroscopy (ca), thallium heart scan results (thal), and the presence or absence of heart disease (target).
+  </p>
+
+  <h2>Feature Explanations:</h2>
+  <ol>
+    <li><strong>Age:</strong> Age of the patient.</li>
+    <li><strong>Sex:</strong> Gender of the patient.</li>
+    <li><strong>Chest Pain Type (cp):</strong> The type of chest pain experienced by the patient, categorized into different levels.</li>
+    <li><strong>Resting Blood Pressure (trestbps):</strong> The resting blood pressure of the patient.</li>
+    <li><strong>Serum Cholesterol Levels (chol):</strong> The serum cholesterol levels in mg/dl.</li>
+    <li><strong>Fasting Blood Sugar (fbs):</strong> Fasting blood sugar level > 120 mg/dl (1 = true; 0 = false).</li>
+    <li><strong>Resting Electrocardiographic Results (restecg):</strong> Results of resting electrocardiogram.</li>
+    <li><strong>Maximum Heart Rate (thalach):</strong> Maximum heart rate achieved during exercise.</li>
+    <li><strong>Exercise-Induced Angina (exang):</strong> Exercise-induced angina (1 = yes; 0 = no).</li>
+    <li><strong>ST Depression (oldpeak):</strong> ST depression induced by exercise relative to rest.</li>
+    <li><strong>Slope:</strong> Slope of the peak exercise ST segment.</li>
+    <li><strong>Number of Major Vessels (ca):</strong> Number of major vessels colored by fluoroscopy.</li>
+    <li><strong>Thallium Scan Results (thal):</strong> Results of the thallium heart scan.</li>
+  </ol>
+
+  <h2>Input formats</h2>
+  <ul>
+    <li>update url:/predict?data=age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal</li>
+    <li>Enter data as json file:{"data":"age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal"}</li>
+  </ul>
+</body>
+</html>
