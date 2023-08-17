@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 
 from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
 
 @dataclass
 class DataIngestionConfig():
@@ -44,4 +45,6 @@ if __name__ == '__main__':
     obj = DataIngestion()
     train_path,test_path = obj.initiate_data_ingestion()
     transform_obj = DataTransformation()
-    transform_obj.initiate_data_transformation(trainset=train_path,testset=test_path)
+    train_arr,test_arr = transform_obj.initiate_data_transformation(trainset=train_path,testset=test_path)
+    model_obj = ModelTrainer()
+    model_obj.initiate_model_trainer(train_array=train_arr,test_array=test_arr)
