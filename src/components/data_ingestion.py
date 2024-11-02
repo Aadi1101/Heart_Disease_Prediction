@@ -22,7 +22,7 @@ class DataIngestion():
     def initiate_data_ingestion(self):
         try:
             logging.info('Started Data Ingestion.')
-            df = pd.read_csv('notebooks\heart.csv')
+            df = pd.read_csv(r'notebooks\heart.csv')
             logging.info("Read the dataset.")
             os.makedirs(os.path.dirname(self.data_ingestion_config.raw_path),exist_ok=True)
             df.to_csv(self.data_ingestion_config.raw_path,index=False,header=True)

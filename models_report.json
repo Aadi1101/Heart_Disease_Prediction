@@ -1,12 +1,52 @@
 {
-    "Decision Tree": 0.7419354838709677, 
-    "AdaboostClassifier": 0.8387096774193549, 
-    "Gradient Boosting Classifier": 0.7096774193548387, 
-    "Random Forest Classifier": 0.8387096774193549, 
-    "Support Vector Machine": 0.8064516129032258, 
-    "K Nearest Neighbours": 0.8387096774193549, 
-    "Naive Bayes": 0.8064516129032258, 
-    "Catboost Classifier": 0.8709677419354839, 
-    "Logistic Regression": 0.8387096774193549, 
-    "XGBoost Classifier": 0.7096774193548387
+    "Decision Tree": {
+        "best_accuracy": 0.6129032258064516, 
+        "best_features": [0], 
+        "best_params": {"max_depth": 10, "min_samples_split": 10}
+    }, 
+    "AdaboostClassifier": {
+        "best_accuracy": 0.7096774193548387, 
+        "best_features": [0], 
+        "best_params": {"learning_rate": 0.01, "n_estimators": 150}
+    }, 
+    "Gradient Boosting Classifier": {
+        "best_accuracy": 0.45161290322580644, 
+        "best_features": [0], 
+        "best_params": {"learning_rate": 0.001, "max_depth": 10, "n_estimators": 100}
+    }, 
+    "Random Forest Classifier": {
+        "best_accuracy": 0.7741935483870968, 
+        "best_features": [2], 
+        "best_params": {"criterion": "gini", "max_depth": 340, "max_features": "log2", "min_samples_leaf": 8, "min_samples_split": 3, "n_estimators": 450}
+    }, 
+    "Support Vector Machine": {
+        "best_accuracy": 0.6774193548387096, 
+        "best_features": [0], 
+        "best_params": {"gamma": "scale", "kernel": "rbf"}
+    }, 
+    "K Nearest Neighbours": {
+        "best_accuracy": 0.7096774193548387, 
+        "best_features": [7], 
+        "best_params": {"metric": "euclidean"}
+    }, 
+    "Naive Bayes": {
+        "best_accuracy": 0.7096774193548387, 
+        "best_features": [0], 
+        "best_params": {}
+    }, 
+    "Catboost Classifier": {
+        "best_accuracy": 0.7741935483870968, 
+        "best_features": [2], 
+        "best_params": {"depth": 10, "iterations": 100, "l2_leaf_reg": 2, "learning_rate": 0.1}
+    }, 
+    "Logistic Regression": {
+        "best_accuracy": 0.6774193548387096, 
+        "best_features": [0], 
+        "best_params": {"penalty": "l2"}
+    }, 
+    "XGBoost Classifier": {
+        "best_accuracy": 0.6129032258064516, 
+        "best_features": [0], 
+        "best_params": {}
+    }
 }
